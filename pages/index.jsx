@@ -1,5 +1,4 @@
-import * as axios from 'axios';
-import type { NextPage } from 'next';
+import axios, { AxiosResponse } from 'axios';
 import Head from 'next/head';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
@@ -7,14 +6,14 @@ import { Divider, Header, Loader } from 'semantic-ui-react';
 import Itemlist from '../src/component/Itemlist';
 import styles from '../styles/Home.module.css';
 
-const Home: NextPage = () => {
+const Home = () => {
   const [list, setList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const API_URL =
     'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
 
   function getData() {
-    axios.get(API_URL).then((res: any) => {
+    axios.get(API_URL).then((res) => {
       setList(res.data);
       setIsLoading(false);
     });

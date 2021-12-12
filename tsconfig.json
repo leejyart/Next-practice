@@ -15,6 +15,21 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/component/Itemlist.jsx",
+    "src/component/Item.jsx",
+    "src/component/Header.jsx",
+    "src/component/Gnb.jsx",
+    "src/component/Footer.jsx",
+    "pages/api/hello.js",
+    "pages/index.jsx",
+    "pages/about.jsx",
+    "pages/_document.jsx",
+    "pages/_app.jsx",
+    "pages/view/[id].jsx"
+  ],
   "exclude": ["node_modules"]
 }
