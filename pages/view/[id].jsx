@@ -61,3 +61,11 @@ Next js 모든 페이지 사전 렌더링(Pre-rendering)
 - getServerSideProps 
 
 */
+
+/*Pre- rendering? 
+: 사전에 html 을 만든다는 의미. 퍼포먼스 향상 . SEO 
+
+
+
+
+*/
